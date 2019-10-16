@@ -40,7 +40,7 @@ h1 {
 }
 
 .lg-heading {
-    margin-top: 150px;
+    margin-top: 50px;
     font-size: 5rem;
     color: #fff;
 }
@@ -206,9 +206,9 @@ a:hover {
     transition: all 1.5s ease-out;
 }
 
-/* .nav-item:hover {
+ .nav-link:hover {
     color: #eece1a;
-} */
+} 
 
 /*Delay each nav item slide by 0.1s*/
 .nav-item:nth-child(1) {
@@ -223,3 +223,56 @@ a:hover {
 .nav-item:nth-child(4) { 
     transition-delay : 0.4s;
 } 
+
+/*Media Query Mixins*/
+
+/*Smartphones*/
+@media only screen and (max-width: 640px) {
+  main, #home, h1 {
+      margin-top: 10vh;
+  }
+}
+
+/*Tablets and Small Laptops */
+@media only screen and (max-width: 768px) {
+ main {
+   align-items: center;
+   text-align: center;
+  }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav, div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;    
+  }
+  .show {
+      transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+      height: 75vh;
+      transform: translate3d(100, 0, 0);
+      font-size: 24px;
+  }
+  .menu-branding {
+      height: 25vh;
+      transform: translate3d(-100, 0, 0);
+  }
+  .portrait {
+    background-image: url("FB_IMG_1501021731077.jpg");
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 1170px) {
+  
+}
+
+
+@media only screen and (min-width: 1171px) {
+ 
+}
