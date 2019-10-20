@@ -48,7 +48,7 @@ h1 {
 .sm-heading {
     margin-bottom: 3rem;
     padding: 0.2rem 1rem;
-    color: #fff;
+    color: black;
 }
 
 a {
@@ -62,7 +62,7 @@ header {
     width: 100%;
 }
 
-.text-secondary {
+.text {
     color: #eece1a;
 }
 
@@ -77,12 +77,12 @@ main {
 }
 
 a {
-    padding: 0.4rempx;
+    padding: 0.4rem;
 }
 
 a:hover {
     color: #eece1a;
-   transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
 }  
 
 #home {
@@ -103,7 +103,7 @@ a:hover {
     width:28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: #fff;
+    background-color: yellow;
     transition: all 1.5s ease-out;
 }
 .nav-link {
@@ -272,6 +272,36 @@ a:hover {
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
 }
+
+/*Contact*/
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.boxes div {
+    font-size: 2rem;
+    border: 3px black solid;
+    padding: 1.5rem 0.5rem;
+    margin-bottom: 3rem;
+    transition: all 1.5s ease-out;
+}
+
+.boxes div:hover {
+    padding: 0.5rem 0.5rem;
+    background-color: #eece1a;
+    color: black;
+}
+
+.boxes:hover span{
+    padding: 0.5rem 0.5rem;
+    color: black;
+}
+
 
 /*button styles*/
 
