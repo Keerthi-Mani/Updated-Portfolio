@@ -266,6 +266,55 @@ a:hover {
     border-bottom: #eece1a 5px solid;
 }
 
+/*work*/
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*button styles*/
+
+.btn {
+    display : block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+}
+
+.btn:hover {
+    background-color:#eece1a;
+    color: #eece1a;
+}
+
+.btn-dark {
+    display : block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.btn-light {
+    display : block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    background-color: #444;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    border: 3px #fff solid;
+}
+
+img:hover {
+    opacity: 0.5;
+    border-color: #eece1a;
+    transition: all 1.5s ease-out;
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
@@ -281,6 +330,10 @@ a:hover {
   main, #home, h1 {
       margin-top: 10vh;
   }
+
+  .projects {
+     grid-template-columns: 1fr;
+ }
 }
 
 /*Tablets and Small Laptops */
@@ -325,12 +378,20 @@ a:hover {
 
       grid-template-columns: 1fr;
   }
+
+  .projects {
+     grid-template-columns: repeat(3, 1fr);
+ }
 }
 
 @media only screen and (max-width: 1170px) {
-  
+  .projects {
+     grid-template-columns: repeat(4, 1fr);
+ }
 }
 
 @media only screen and (min-width: 1171px) {
- 
+ .projects {
+     grid-template-columns: repeat(5, 1fr);
+ }
 }
