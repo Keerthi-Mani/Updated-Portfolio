@@ -1,5 +1,5 @@
 body {
-  background-color: #444;
+  /* background-color: black; */
   color: #eece1a;
   height: 100%;
   margin: 0;
@@ -231,8 +231,8 @@ a:hover {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+    "job1 job2";
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .bio-image {
@@ -259,7 +259,10 @@ a:hover {
 .job-3 {
   grid-area: job3;
 }
-
+h4,
+h6 {
+  background-color: yellow;
+}
 .job {
   background-color: #444;
   padding: 0.5rem;
@@ -322,6 +325,7 @@ a:hover {
   border: 0;
   margin-bottom: 0.3rem;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-light {
@@ -329,8 +333,9 @@ a:hover {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  background-color: #444;
+  /* background-color: #444; */
   color: #fff;
+  cursor: pointer;
 }
 
 img {
@@ -342,6 +347,7 @@ img:hover {
   opacity: 0.5;
   border-color: #eece1a;
   transition: all 1.5s ease-out;
+  cursor: pointer;
 }
 
 #main-footer {
@@ -388,12 +394,12 @@ img:hover {
   }
   .menu-nav {
     height: 75vh;
-    transform: translate3d(100, 0, 0);
+    transform: translate3d(-100, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(-100, 0, 0);
+    transform: translate3d(100, 0, 0);
   }
   .portrait {
     background-image: url("FB_IMG_1501021731077.jpg");
@@ -405,8 +411,7 @@ img:hover {
       "bioimage"
       "bio"
       "job1"
-      "job2"
-      "job3";
+      "job2";
 
     grid-template-columns: 1fr;
   }
