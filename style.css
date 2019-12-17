@@ -154,7 +154,7 @@ a:hover {
 .menu-nav {
   margin: 0;
   padding: 0;
-  background-color: #444;
+  background-color: black;
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 1.5s ease-out;
@@ -167,7 +167,7 @@ a:hover {
 
 /*Branding Side*/
 .menu-branding {
-  background-color: #444;
+  background-color: black;
   transform: translate3d(0, 100%, 0);
   transition: all 1.5s ease-out;
 }
@@ -231,14 +231,14 @@ a:hover {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2";
+    "job1 job2 job3";
   grid-template-columns: repeat(2, 1fr);
 }
 
 .bio-image {
   grid-area: bioimage;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: auto;
   border-radius: 50%;
   border: solid 3px #eece1a;
@@ -259,7 +259,7 @@ a:hover {
 .job-3 {
   grid-area: job3;
 }
-h4,
+
 h6 {
   background-color: yellow;
 }
@@ -425,10 +425,28 @@ img:hover {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2";
+
+    grid-template-columns: 1fr;
   }
 }
