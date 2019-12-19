@@ -154,7 +154,7 @@ a:hover {
 .menu-nav {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #444;
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 1.5s ease-out;
@@ -167,7 +167,7 @@ a:hover {
 
 /*Branding Side*/
 .menu-branding {
-  background-color: black;
+  background-color: #444;
   transform: translate3d(0, 100%, 0);
   transition: all 1.5s ease-out;
 }
@@ -178,10 +178,10 @@ a:hover {
 }
 
 .portrait {
-  width: 250px;
-  height: 250px;
-  background-image: url("FB_IMG_1501021731077.jpg");
-  border-radius: 60%;
+  width: 400px;
+  height: 400px;
+  background-image: url("pic.jpeg");
+  border-radius: 50%;
   border: solid 3px #eece1a;
 }
 
@@ -402,7 +402,7 @@ img:hover {
     transform: translate3d(100, 0, 0);
   }
   .portrait {
-    background-image: url("FB_IMG_1501021731077.jpg");
+    background-image: url("pic.jpeg");
     width: 150px;
     height: 150px;
   }
