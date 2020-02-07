@@ -1,3 +1,7 @@
+/* * {
+  box-sizing: border-box;
+} */
+
 body {
   /* background-color: black; */
   color: #eece1a;
@@ -104,7 +108,7 @@ a:hover {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background-color: yellow;
+  background-color: orangered;
   transition: all 1.5s ease-out;
 }
 .nav-link {
@@ -411,7 +415,8 @@ img:hover {
       "bioimage"
       "bio"
       "job1"
-      "job2";
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
@@ -430,7 +435,8 @@ img:hover {
       "bioimage"
       "bio"
       "job1"
-      "job2";
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
@@ -445,7 +451,8 @@ img:hover {
       "bioimage"
       "bio"
       "job1"
-      "job2";
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
