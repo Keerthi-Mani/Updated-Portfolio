@@ -63,7 +63,7 @@ header {
 }
 
 .text {
-  color: #eece1a;
+  color: orangered;
 }
 
 main {
@@ -264,9 +264,9 @@ h6 {
   background-color: yellow;
 }
 .job {
-  background-color: #444;
+  background-color: lightgrey;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: yellow 5px solid;
 }
 
 /*work*/
